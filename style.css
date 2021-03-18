@@ -1,0 +1,9 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+#mainpic {
+    margin: auto;
+    width:100vw;
+    height: 100vw;
+    display:block;
+    background: white url(/dist/img/MainFood.png) no-repeat fixed center;
+}
