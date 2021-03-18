@@ -1,9 +1,52 @@
+/* CSS Reset */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ranchers&display=swap');
+
+
+
+:root {
+    --main-font: 'Raleway', sans-serif;
+    --secondary-font:'Ranchers', cursive;
+}
+
 
 #mainpic {
     margin: auto;
     width:100vw;
-    height: 100vw;
+    height:100vh;
     display:block;
-    background: white url(/dist/img/MainFood.png) no-repeat fixed center;
+    background: white url(/dist/img/weirdFruit.jpg) no-repeat;
+    background-size: cover;
+    padding:20px;
+}
+
+#title {
+    font-family: var(--secondary-font);
+    font-size:36px;
+    color:#2b2828;
+    margin-left: 20px;
+    
+}
+
+#subtitle {
+    font-family: var(--main-font);
+    font-size:22px ;
+    margin-left:20px;
+
+}
+
+#empty {
+    background-color: white;
+    display:flex;
+    width:100vw;
+    height:40px;
+    color:transparent;
+}
+
+.div {
+    font-family: var(--secondary-font);
+    font-size:36px;
+    color:#2b2828;
+    margin-left: 20px;
 }
