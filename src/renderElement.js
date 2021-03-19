@@ -92,8 +92,12 @@ function info(){
     mainpic.appendChild(infoDiv);
 }
 
+function clear(){
+    
+}
+
 function home(){
-    makeAdvertisement();
+makeAdvertisement();
 makeBackground(); //background container
 headingDiv();
 makeTitle();
@@ -103,4 +107,4 @@ info();
 }
 
 
-export { home };
+export { home, makeNav };
