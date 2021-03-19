@@ -31,16 +31,21 @@
 .background h2 {
     font-family: var(--main-font);
     font-size:14px ;
+    background-color: transparent;
 }
 
 .home {
  margin-left:420px;
  line-height: 60px;
+ background-color: transparent;
+ border:none;
 }
 
 
 .contact {
     line-height: 60px;
+    background-color: transparent;
+    border:none;
 }
 
 .menu {
@@ -48,6 +53,8 @@
     font-size:22px ;
     line-height: 60px;
     margin-right:20px;
+    background-color: transparent;
+    border:none;
 }
 
 #title {
