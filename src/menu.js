@@ -1,6 +1,3 @@
-import {makeNav} from './renderElement'
-
-
 function test(){
     const mainpic = document.querySelector('#mainpic');
     const bigDiv = document.createElement('div');
@@ -25,6 +22,8 @@ function testBackground(){
 const figDiv = document.createElement('div');
 figDiv.setAttribute('class', 'foodDivs');
 figDiv.innerHTML = '<h2 class ="mango">Mango $100/lb <br> Starfruit $100/lb <br> Passionfruit $100/lb <br> Jackfruit $100/lb <br> Durian $100/lb <br> Rambutan $100/lb <br> Mangosteen $100/lb</>'
+
+/* add add to cart btn */
 
 newDiv.appendChild(figDiv)
 }
