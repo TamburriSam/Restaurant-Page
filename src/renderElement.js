@@ -1,3 +1,5 @@
+
+
 function makeAdvertisement(){
     const content = document.querySelector('#mainpic')
     const advertisement = document.createElement('div');
@@ -13,10 +15,12 @@ function makeAdvertisement(){
 
 }
 
-function makeBackground(div) {
+function makeBackground() {
   const newDiv = document.createElement("div");
   newDiv.setAttribute("class", "background")
-  div.appendChild(newDiv);
+  
+  const content = document.querySelector('#mainpic');
+  content.appendChild(newDiv)
 }
 
 function headingDiv(){
@@ -41,7 +45,7 @@ function makeTitle(){
 
 function makeNav() {
     const background = document.querySelector('.background');
-    const home = document.createElement('div');
+    const home = document.createElement('button');
     home.setAttribute('class', 'home');
     background.appendChild(home)
 
@@ -49,7 +53,7 @@ function makeNav() {
    h2.innerHTML = 'home';
    home.appendChild(h2)
 
-   const contact = document.createElement('div');
+   const contact = document.createElement('button');
    contact.setAttribute('class', 'contact');
    background.appendChild(contact)
 
@@ -57,7 +61,7 @@ function makeNav() {
    h21.innerHTML ='contact';
    contact.appendChild(h21)
 
-   const menu = document.createElement('div');
+   const menu = document.createElement('button');
    menu.setAttribute('class', 'menu');
    background.appendChild(menu)
 
@@ -88,4 +92,15 @@ function info(){
     mainpic.appendChild(infoDiv);
 }
 
-export { makeAdvertisement, makeBackground, headingDiv, makeTitle, makeNav, homeContent, info };
+function home(){
+    makeAdvertisement();
+makeBackground(); //background container
+headingDiv();
+makeTitle();
+makeNav();
+homeContent();
+info();
+}
+
+
+export { home };
