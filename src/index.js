@@ -1,4 +1,5 @@
-import { home } from './renderElement.js'
+import { home } from './renderElement.js';
+import {menu} from './menu.js'
 
 
 
@@ -21,13 +22,16 @@ homeBtn.addEventListener('click', function(){
     home();
 })
 
+menuBtn.addEventListener('click', function(){
+
+    menu();
+})
+
 contactBtn.addEventListener('click', function(){
 
 })
 
-menuBtn.addEventListener('click', function(){
-    
-})
+
 
 //makeTitle(contentDiv)
 //makeSubtitle(contentDiv)
