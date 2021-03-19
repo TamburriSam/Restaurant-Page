@@ -12,6 +12,8 @@ contentDiv.setAttribute("id", "mainpic");
 
 home();
 
+
+
 const homeBtn = document.querySelector('.home');
 const contactBtn = document.querySelector('.contact');
 const menuBtn = document.querySelector('.menu');
@@ -19,11 +21,12 @@ const menuBtn = document.querySelector('.menu');
 
 
 homeBtn.addEventListener('click', function(){
-    home();
+    location.reload();
 })
 
 menuBtn.addEventListener('click', function(){
-
+    homeBtn.style.textDecoration = 'none';
+    menuBtn.style.textDecoration = 'overline wavy';
     menu();
 })
 
