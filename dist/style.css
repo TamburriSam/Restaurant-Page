@@ -1,15 +1,12 @@
 /* CSS Reset */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ranchers&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat&display=swap');
 
 :root {
-    --main-font: 'Raleway', sans-serif;
-    --secondary-font:'Ranchers', cursive;
+    --main-font: 'Della Respira', serif;
+    --secondary-font:'Montserrat', sans-serif;
 }
-
 
 #mainpic {
     margin: auto;
@@ -18,20 +15,54 @@
     display:block;
     background: white url(/dist/img/weirdFruit.jpg) no-repeat;
     background-size: cover;
-    padding:20px;
+}
+
+.background {
+    display:flex;
+    justify-content: space-between;
+    /* background-color: #d1edd296; */
+    border-radius: 5px;
+    margin-top:15px;
+    padding:10px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    
+}
+
+.background h2 {
+    font-family: var(--main-font);
+    font-size:14px ;
+}
+
+.home {
+ margin-left:420px;
+ line-height: 60px;
+}
+
+
+.contact {
+    line-height: 60px;
+}
+
+.menu {
+    font-family: var(--main-font);
+    font-size:22px ;
+    line-height: 60px;
+    margin-right:20px;
 }
 
 #title {
-    font-family: var(--secondary-font);
-    font-size:36px;
+    font-family: var(--main-font);
+    font-size:24px;
     color:#2b2828;
     margin-left: 20px;
     
 }
 
+
+
 #subtitle {
-    font-family: var(--main-font);
-    font-size:22px ;
+    font-family: var(--secondary-font);
+    font-size:14px ;
     margin-left:20px;
 
 }
@@ -49,4 +80,43 @@
     font-size:36px;
     color:#2b2828;
     margin-left: 20px;
+}
+
+#tryDiv {
+    height:100px;
+    position:absolute;
+    top:300px;
+    left:60px;
+    font-family: var(--secondary-font);
+    font-size:20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#tryBtn {
+    font-family: var(--secondary-font);
+    background:white;
+    border:none;
+    border-radius: 10px;
+    height:30px;
+    margin-top:10px;
+}
+
+#infoDiv {
+    font-family: var(--secondary-font);
+    position:absolute;
+    right:40px;
+    top:200px;
+    font-size:30px;
+    line-height: 2.0;
+
+}
+
+#advertisement {
+    background-color: #90D4BA;
+    text-align: center;
+    font-family: var(--secondary-font);
+    height:40px;
+    padding:10px;
 }
