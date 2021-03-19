@@ -1,31 +1,33 @@
-import { makeAdvertisement, makeBackground, headingDiv, makeTitle, makeNav, homeContent, info } from './renderElement.js'
-//make factory
+import { home } from './renderElement.js'
+
 
 
 const contentDiv = document.querySelector('#content');
-contentDiv.setAttribute("id", "mainpic");
+contentDiv.setAttribute("id", "mainpic"); 
 
 //tabbed event listeners
-const home = document.querySelector('.home')
-
-/* home.addEventListener('click', function(){
-    clear();
-}) */
-
-function homeClick(){
-    home.addEventListener('click', function(){
-        console.log('j')
-    })
-}
 
 
-makeAdvertisement();
-makeBackground(contentDiv); //background container
-headingDiv();
-makeTitle();
-makeNav();
-homeContent();
-info();
+
+home();
+
+const homeBtn = document.querySelector('.home');
+const contactBtn = document.querySelector('.contact');
+const menuBtn = document.querySelector('.menu');
+
+
+
+homeBtn.addEventListener('click', function(){
+    home();
+})
+
+contactBtn.addEventListener('click', function(){
+
+})
+
+menuBtn.addEventListener('click', function(){
+    
+})
 
 //makeTitle(contentDiv)
 //makeSubtitle(contentDiv)
