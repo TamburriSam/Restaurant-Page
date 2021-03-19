@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat&display=swap');
 
+* {
+    overflow: hidden;
+}
+
 :root {
     --main-font: 'Della Respira', serif;
     --secondary-font:'Montserrat', sans-serif;
@@ -126,4 +130,40 @@
     font-family: var(--secondary-font);
     height:40px;
     padding:10px;
+}
+
+#bigDiv {
+    width: 100vw;
+    height: 100vh;
+    z-index:50;
+    background: white url(/dist/img/weirdFruit.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#menuBackground {
+    background-color: black;
+    opacity: .8;
+    margin-top:10px;
+    height:80vh;
+    width:50vw;
+    display:inline-flex;
+}
+
+.foodDivs {
+    width:900px;
+    height:900px;
+    z-index:50;
+    background-color: black;
+    color:white;
+}
+
+.mango {
+    color:pink;
+    z-index:52;
+
+    height:200px;
+    width:200px;
+    font-size:20px;
+
 }
