@@ -1,5 +1,6 @@
 import { home } from './renderElement.js';
-import {menu} from './menu.js'
+import {menu} from './menu.js';
+import {contact} from './contact.js';
 
 
 
@@ -27,11 +28,15 @@ homeBtn.addEventListener('click', function(){
 menuBtn.addEventListener('click', function(){
     homeBtn.style.textDecoration = 'none';
     menuBtn.style.textDecoration = 'overline wavy';
+
     menu();
 })
 
 contactBtn.addEventListener('click', function(){
+    homeBtn.style.textDecoration = 'none';
+    contactBtn.style.textDecoration = 'overline wavy';
 
+    contact();
 })
 
 
