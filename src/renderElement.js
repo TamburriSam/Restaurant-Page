@@ -53,6 +53,14 @@ function makeNav() {
    h2.innerHTML = 'home';
    home.appendChild(h2)
 
+    const menu = document.createElement('button');
+   menu.setAttribute('class', 'menu');
+   background.appendChild(menu)
+
+   const h22 = document.createElement('h2');
+   h22.innerHTML = 'menu';
+   menu.appendChild(h22)
+
    const contact = document.createElement('button');
    contact.setAttribute('class', 'contact');
    background.appendChild(contact)
@@ -61,13 +69,6 @@ function makeNav() {
    h21.innerHTML ='contact';
    contact.appendChild(h21)
 
-   const menu = document.createElement('button');
-   menu.setAttribute('class', 'menu');
-   background.appendChild(menu)
-
-   const h22 = document.createElement('h2');
-   h22.innerHTML = 'menu';
-   menu.appendChild(h22)
 } 
 
 function homeContent(){
@@ -86,14 +87,16 @@ function homeContent(){
 function info(){
     const mainpic = document.querySelector('#mainpic');
     const infoDiv = document.createElement('div');
-    infoDiv.innerHTML = `Tired of spending loot <br> on same ol' fruit? <br>Try Strange Roots.`;
+    infoDiv.innerHTML = `Tired of spending loot <br> on same ol' fruit? <br>Try <span id = "strange">Strange Roots</span>`;
+
+    //VIEW CATALOG BUTTON SHOULD GO HERE FOR AUTHENTICITY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LINK IT TO MENU !!!!!!!!!!!!!!!!!!!!!!
 
     infoDiv.setAttribute('id', 'infoDiv')
     mainpic.appendChild(infoDiv);
 }
 
 function clear(){
-    
+
 }
 
 function home(){
