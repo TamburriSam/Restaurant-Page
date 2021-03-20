@@ -10,6 +10,9 @@ function test(){
 
     infoDiv.style.display ='none';
     tryDiv.style.display='none';
+
+  
+
 }
 
 function testBackground(){
