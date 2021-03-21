@@ -34,8 +34,8 @@ function makeTitle(){
     const heading = document.querySelector('.heading');
     const h1 = document.createElement('h1');
     const h2 = document.createElement('h2');
-    h2.innerHTML = 'a subscription service for strange fruits.'
-    h1.innerHTML = '<i class="far fa-lemon"></i> Strange Roots';
+    h2.innerHTML = 'a subscription service for strange fruits. '
+    h1.innerHTML = '<i class="far fa-lemon"></i> Strange Roots <br>';
     h1.setAttribute('id', 'title');
     h2.setAttribute('id', 'subtitle');
     h1.appendChild(h2)
@@ -87,7 +87,7 @@ function homeContent(){
 function info(){
     const mainpic = document.querySelector('#mainpic');
     const infoDiv = document.createElement('div');
-    infoDiv.innerHTML = `Tired of spending loot <br> on same ol' fruit? <br>Try <span id = "strange">Strange Roots</span>`;
+    infoDiv.innerHTML = `Tired of spending loot <br> on same ol' fruit? <br>Try <span id = "strange">Strange Roots</span> <br> <i class="lemon fas fa-lemon"></i>`;
 
     //VIEW CATALOG BUTTON SHOULD GO HERE FOR AUTHENTICITY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LINK IT TO MENU !!!!!!!!!!!!!!!!!!!!!!
 
@@ -95,8 +95,15 @@ function info(){
     mainpic.appendChild(infoDiv);
 }
 
-function clear(){
+function newsLetter(){
+const form = document.createElement('div');
+const mainpic = document.querySelector('#mainpic');
 
+form.innerHTML = `<input type="text" id="formInput"> Sign Up for our weekly newsletter, get 10% off your first order.`
+
+form.setAttribute('id', 'form')
+
+mainpic.appendChild(form)
 }
 
 function home(){
@@ -107,6 +114,7 @@ makeTitle();
 makeNav();
 homeContent();
 info();
+newsLetter();
 }
 
 
