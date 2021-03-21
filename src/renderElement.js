@@ -99,7 +99,7 @@ function newsLetter(){
 const form = document.createElement('div');
 const mainpic = document.querySelector('#mainpic');
 
-form.innerHTML = `<input type="text" id="formInput"> Sign Up for our weekly newsletter, get 10% off your first order.`
+form.innerHTML = `<input type="text" id="formInput"> Sign Up for our weekly newsletter, get 10% off your first order. <br> <button type ="button" id ="email">Sign Up</button>`
 
 form.setAttribute('id', 'form')
 
