@@ -22,7 +22,7 @@ function testBackground() {
   const figDiv = document.createElement("div");
   figDiv.setAttribute("class", "foodDivs");
   figDiv.innerHTML =
-    '<h2 class ="mango">Mango $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button><br>Starfruit $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Passionfruit $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Jackfruit $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Durian $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Rambutan $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Mangosteen $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button></></h2>';
+    '<h2 class ="mango">Mango $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button><br>Starfruit $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Passionfruit $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Jackfruit $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Durian $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> Rambutan $100/lb <button class="btn1"><i class="fas fa-shopping-cart"></i> Add to Cart</button> <br> ';
 
   /* add add to cart btn  */
 
