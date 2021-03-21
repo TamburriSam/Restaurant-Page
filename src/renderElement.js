@@ -127,6 +127,17 @@ form.setAttribute('id', 'form')
 mainpic.appendChild(form)
 }
 
+function makeFooter(){
+    const mainpic = document.querySelector('#mainpic');
+    const footer = document.createElement('div');
+
+    footer.setAttribute('id', 'footer');
+    footer.innerHTML = 'Copyright (not really) © 2021 Sam Tamburri  <button id ="githubBtn"><i class="fab fa-github"></i></btn>';
+    mainpic.appendChild(footer);
+
+
+}
+
 function home(){
 makeAdvertisement();
 makeBackground(); //background container
@@ -136,6 +147,7 @@ makeNav();
 homeContent();
 info();
 newsLetter();
+makeFooter();
 }
 
 
