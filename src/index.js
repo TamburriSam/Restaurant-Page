@@ -1,6 +1,6 @@
 import { home } from "./renderElement.js";
 import { menu, removeMenu } from "./menu.js";
-import { contact } from "./contact.js";
+import { contact, removeContact } from "./contact.js";
 
 const contentDiv = document.querySelector("#content");
 contentDiv.setAttribute("id", "mainpic");
@@ -20,6 +20,7 @@ menuBtn.addEventListener("click", function () {
   menuBtn.style.textDecoration = "overline solid";
   if (contactBtn.style.textDecoration) {
     contactBtn.style.textDecoration = "none";
+    removeContact();
   }
 
   menuBtn.disabled = true;
