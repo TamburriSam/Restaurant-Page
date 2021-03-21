@@ -16,9 +16,8 @@ homeBtn.addEventListener("click", function () {
 });
 
 menuBtn.addEventListener("click", function () {
-
   homeBtn.style.textDecoration = "none";
-  menuBtn.style.textDecoration = "overline wavy";
+  menuBtn.style.textDecoration = "overline solid";
   if (contactBtn.style.textDecoration) {
     contactBtn.style.textDecoration = "none";
   }
@@ -26,23 +25,18 @@ menuBtn.addEventListener("click", function () {
   menuBtn.disabled = true;
   contactBtn.disabled = false;
 
- 
   menu();
 });
 
 contactBtn.addEventListener("click", function () {
   homeBtn.style.textDecoration = "none";
-  contactBtn.style.textDecoration = "overline wavy";
+  contactBtn.style.textDecoration = "overline solid";
 
   if (menuBtn.style.textDecoration) {
     menuBtn.style.textDecoration = "none";
-        removeMenu();
+    removeMenu();
   }
   contactBtn.disabled = true;
   menuBtn.disabled = false;
   contact();
-
-  
- 
-
 });
