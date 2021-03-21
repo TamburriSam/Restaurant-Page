@@ -19,12 +19,12 @@
   display: block;
   background: white url(/dist/img/weirdFruit.jpg) no-repeat;
   background-size: cover;
+  background-color: #7FA180;
 }
 
 .background {
   display: flex;
   justify-content: space-between;
-  /* background-color: #d1edd296; */
   border-radius: 5px;
   margin-top: 15px;
   padding: 10px;
@@ -42,11 +42,13 @@
   line-height: 60px;
   background-color: transparent;
   border: none;
-  text-decoration: overline wavy;
+  text-decoration: overline solid;
 }
 .home:hover {
   cursor: pointer;
-  text-decoration: underline wavy;
+  text-decoration: underline solid !important;
+  border-radius:150px;
+  outline:none;
 }
 
 .contact {
@@ -56,7 +58,8 @@
 }
 .contact:hover {
   cursor: pointer;
-  text-decoration: underline wavy;
+  text-decoration: underline solid;
+  outline:none;
 }
 
 .menu {
@@ -69,9 +72,9 @@
 }
 .menu:hover {
   cursor: pointer;
-  text-decoration: underline wavy;
+  text-decoration: underline solid;
+  outline:none;
 }
-
 
 #title {
   font-family: var(--main-font);
@@ -85,6 +88,9 @@
   font-family: var(--secondary-font);
   font-size: 14px;
   margin-left: 20px;
+  border-bottom: 1px solid black ;
+  
+
 }
 
 #empty {
@@ -106,7 +112,7 @@
   height: 100px;
   position: absolute;
   top: 300px;
-  left: 60px;
+  left: 120px;
   font-family: var(--main-font);
   font-size: 20px;
   display: flex;
@@ -118,20 +124,36 @@
   font-family: var(--secondary-font);
   background: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 30px;
+  width: 187px;
+  font-size:15px;
   margin-top: 10px;
+  transition: 0.2s all;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-left: solid 3px #90d4ba;
+  border-bottom:solid 3px #90d4ba;
+  
+}
+#tryBtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;    cursor:pointer;
+    transform: scale(.98);
+    border-bottom: solid 2px #90d4ba;
+    border-left: solid 2px #90d4ba;
+
+}
+#tryBtn:focus{
+   outline:0;
 }
 
 #infoDiv {
   font-family: var(--main-font);
-  position: absolute;
-  right: 40px;
-  top: 200px;
+  position: fixed;
+  right: 130px;
+  top: 260px;
   font-size: 30px;
   line-height: 1.5;
   color: #2b2828;
-
 }
 
 #advertisement {
@@ -152,10 +174,11 @@
   opacity: 0.9;
   margin-top: 10px;
   height: 80vh;
-  width: 50vw;
+  width: 40vw;
   display: inline-flex;
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
+
 }
 
 .foodDivs {
@@ -176,12 +199,14 @@
 
 .mango {
   color: pink;
-  z-index: 52;
+  z-index: 1;
   line-height: 100px;
   height: 100vh;
-  width: 200px;
+  width: 100vw;
   font-size: 20px;
   font-family: var(--secondary-font);
+  display:inline;
+
 }
 
 #overdiv {
@@ -193,16 +218,243 @@
 #overlay {
   width: 60vw;
   height: 70vh;
-  padding: 30px;
+  padding: 15px;
   margin-top: 40px;
   font-family: var(--secondary-font);
   font-size: 20px;
   line-height: 30px;
-  background: #ffffffc4;
+  background: #020000c4;
   border-radius: 15px;
+  font-size:16px;
+  color:white;
 }
 
 #strange {
-    color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding:-3px;
+  border-bottom: 1px solid white;
+
+}
+
+.btn1 {
+  background: transparent;
+  color:pink;
+  border:2px solid pink;
+  padding:10px;
+  border-radius: 10px;
+  font-family: var(--secondary-font);
+  margin-left:10px;
+}
+.btn1:hover{
+    background-color: pink;
+    color:black;
+    cursor:pointer;
+}
+
+
+
+.halfDiv {
+    width:30vw;
+    height:100vh;
+    background-color: black;
+    opacity:.9;
+    display:flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#mangos {
+    height:200px;
+    background-image: url(/dist/img/mangos.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    clip-path: circle(15%);
+    display:inline;
+    z-index:90;
+    position:relative;
+    bottom:40px;
+}
+
+#starfruit {
+    height:100px;
+    background-image: url(/dist/img/starfruit.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    clip-path: circle(20%);
+    display:inline-flex;
+    position:relative;
+    bottom:100px;
+}
+
+#passion {
+    height:100px;
+    background-image: url(/dist/img/passionfruit.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    clip-path: circle(20%);
+    display:inline-flex;
+    position:relative;
+    bottom:100px;
+}
+
+#jackfruit {
+    height:100px;
+    background-image: url(/dist/img/jackfruit.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    clip-path: circle(20%);
+    display:inline-flex;
+    position:relative;
+    bottom:100px;
+}
+
+#durian {
+    height:100px;
+    background-image: url(/dist/img/durian.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    clip-path: circle(20%);
+    display:inline-flex;
+    position:relative;
+    bottom:100px;
+}
+
+#rambutan {
+    height:100px;
+    background-image: url(/dist/img/rambutan.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    clip-path: circle(20%);
+    display:inline-flex;
+    position:relative;
+    bottom:100px;
+}
+
+hr {
+    background-color:black;
+}
+
+.lemon {
+    display:none !important;
+}
+
+@media screen and (max-width:900px){
+    #title{
+        text-align: center;
+  
+    }
+
+    #subtitle {
+        display:none;
+    }
+
+    .background {
+        justify-content: center;
+    }
+
+    .home {
+        margin-left:70px;
+        bottom:10px;
+        position:relative;
+        z-index: 909;
+    }
+
+    .lemon {
+        display:block !important;
+        font-size:140px;
+        margin-top:50px;
+    }
+
+    .menu {
+        margin-right: 0px;
+        bottom:12px;
+        position:relative;
+        z-index: 909;
+    }
+
+    .contact {
+        margin-right: 0px;
+        bottom:10px;
+        position:relative;
+        z-index: 909;
+    }
+
+    .background h2 {
+        display:inline-flex;
+    }
+    
+    #infoDiv {
+        right:0px;
+        top:0px;
+        margin:auto;
+        display:inline-block;
+        text-align: center;
+        width:100vw;
+        position:fixed;
+        left:0 !important;
+        padding:150px 0;
+        color:black;
+        opacity:0.6;
+        z-index:90;
+    }
+
+    #mainpic {
+        background-image: none;
+        background-color:#7FA180;
+    }
+
+    #tryDiv {
+        position: relative;;
+        top: 370px !important;
+        left:0px;
+        justify-content: center !important;
+       
+    }
+
+    #tryBtn {
+        width:25vw;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+}
+
+#form {
+    width:250px;
+    height:100px;
+    position:absolute;
+    bottom:190px;
+    right:130px;
+    background-color: white;
+    font-family: var(--secondary-font);
+    text-align: center;
+    padding:10px;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+#formInput {
+    background: white;
+  
+    
+    width:18vw;
+    
    
+}
+
+@media screen and (max-width: 1280px){
+    #infoDiv {
+        position:absolute;
+        left:100px;
+    }
+
+    #tryDiv{
+        top:500px;
+    }
+
+    #tryBtn {
+        width:20vw;
+    }
 }
