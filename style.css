@@ -37,8 +37,28 @@
   background-color: transparent;
 }
 
+#navcontainer {
+  background-color: transparent;
+  margin-right:20px;
+  display: flex;
+}
+
+#socialcontainer {
+  width:100px;
+  height:70px;
+  display:flex;
+  line-height:70px;
+  color:black;
+}
+
+
+#socialh2 {
+  font-size:20px;
+  color:black;
+}
+
 .home {
-  margin-left: 420px;
+  
   line-height: 60px;
   background-color: transparent;
   border: none;
@@ -46,15 +66,19 @@
 }
 .home:hover {
   cursor: pointer;
-  text-decoration: underline solid !important;
   border-radius:150px;
   outline:none;
+}
+
+button h2:hover{
+  text-decoration: underline solid;
 }
 
 .contact {
   line-height: 60px;
   background-color: transparent;
   border: none;
+  margin-right:10px;
 }
 .contact:hover {
   cursor: pointer;
@@ -66,7 +90,6 @@
   font-family: var(--main-font);
   font-size: 22px;
   line-height: 60px;
-  margin-right: 20px;
   background-color: transparent;
   border: none;
 }
@@ -172,12 +195,13 @@
 #menuBackground {
   background-color: black;
   opacity: 0.9;
-  margin-top: 10px;
-  height: 80vh;
+  margin-top: 40px;
+  height: 65vh;
   width: 40vw;
   display: inline-flex;
   text-align: left;
   border-radius: 10px;
+  z-index:100;
 
 }
 
@@ -334,43 +358,72 @@ hr {
     background-color:black;
 }
 
-.lemon {
-    display:none !important;
+
+i.lemon {
+  display:none;
 }
 
 #form {
     width:250px;
-    height:110px;
+    height:130px;
     position:absolute;
-    bottom:190px;
-    left:110px;
+    bottom:200px;
+    left:0;
     background-color: rgb(241, 241, 241);
-    font-family: var(--main-font);
+    font-family: var(--secondary-font);
     text-align: center;
     padding:10px;
     display:flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     border-radius: 4px;
-     border-bottom:solid 6px #90D4BA !important;
     
-     border:solid 3px #90D4BA;
+      border: solid 2px #90D4BA;
+     border-left:solid 3px #90D4BA;
 }
+
+div#form {
+  border-bottom:solid 3px #90D4BA ;
+}
+
+#signup {
+  color:black;
+  position:absolute;
+  top:0;
+}
+
+
 
 #formInput {
     background: white;
     border-radius:4px;
-    border:2px solid black;
+    border:2px solid #90D4BA;
     height:30px;
     font-family: var(--secondary-font);
     width:230px;
-    
-   
+    margin-bottom:20px;
 }
 
 #email {
     background-color: #fff;
+    position:relative;
+    top:85px;
+    height:30px;
+    border:2px solid #90D4BA;
+    border-radius:5px;
+    font-family: var(--secondary-font);
+
+    margin:auto;
+    width:50%;
 }
+#email:hover {
+  background-color: #90d4ba;
+  cursor:pointer;
+}
+#email:focus{
+  outline:0;
+}
+
 
 @media screen and (max-width:900px){
     #title{
@@ -393,8 +446,11 @@ hr {
         z-index: 909;
     }
 
+    i.lemon{
+      display:block;
+    }
+
     .lemon {
-        display:block !important;
         font-size:140px;
         margin-top:50px;
     }
@@ -405,6 +461,8 @@ hr {
         position:relative;
         z-index: 909;
     }
+
+    
 
     .contact {
         margin-right: 0px;
@@ -425,11 +483,14 @@ hr {
         text-align: center;
         width:100vw;
         position:fixed;
-        left:0 !important;
         padding:150px 0;
         color:black;
         opacity:0.6;
         z-index:90;
+    }
+
+    div#infoDiv {
+      left: 0;
     }
 
     #mainpic {
@@ -439,10 +500,13 @@ hr {
 
     #tryDiv {
         position: relative;;
-        top: 370px !important;
+ 
         left:0px;
-        justify-content: center !important;
-       
+
+    }
+    div#tryDiv{
+      justify-content: center;
+      top:370px;
     }
 
     #tryBtn {
@@ -450,12 +514,79 @@ hr {
         margin: 0 auto;
         margin-top: 10px;
     }
+
+    #form {
+      margin:0 auto;
+      position:relative;
+      top:370px;
+    }
+
+    #socialcontainer {
+      display:inline;
+      bottom:10px;
+      position:relative
+    }
     
+    .contact {
+      margin-right:20px;
+    }
+
+    #bigDiv {
+      display:flex;
+      justify-content: center;
+
+    }
+
+    #menuBackground{
+      width:90vw;
+      position:absolute;
+      bottom:120px;
+    }
+
+    .foodDivs{
+      display:block;
+    }
+
+   
+
+    .mango {
+      
+      width:30vw;
+      line-height:100px;
+    }
+
+    .btn1 {
+      width:50px;
+      height:30px;
+    }
+
+    .halfDiv {
+      width: 40vw;
+    }
+
+    #overdiv {
+      bottom:130px;
+      position:relative;
+    }
 }
 
+@media screen and (max-width:400px){
+  .mango {
+    font-size:10px;
+    width:30vw;
+    line-height:100px;
+  }
 
+  .halfDiv{
+    display:none;
+  }
 
-@media screen and (max-width: 1280px){
+  .foodDivs {
+    margin-left:70px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width:901px){
     #infoDiv {
         position:absolute;
         left:100px;
@@ -468,4 +599,18 @@ hr {
     #tryBtn {
         width:20vw;
     }
+
+    #form{
+      bottom:0;
+    }
+
+ #menuBackground {
+   width:80vw;
+ }
+
+  
+
+    
+
+    
 }
