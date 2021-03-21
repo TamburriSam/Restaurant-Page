@@ -31,5 +31,10 @@ function contact(){
     contactSheet();
 }
 
+function removeContact(){
+    const contactForm = document.querySelector('#overdiv');
 
-export { contact }
+    contactForm.style.display = 'none'
+}
+
+export { contact, removeContact }

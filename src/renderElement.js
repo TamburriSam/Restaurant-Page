@@ -49,6 +49,9 @@ function makeNav() {
     home.setAttribute('class', 'home');
     background.appendChild(home)
 
+    const navContainer = document.createElement('div');
+    background.appendChild(navContainer);
+
    const h2 =  document.createElement('h2');
    h2.innerHTML = 'home';
    home.appendChild(h2)
@@ -68,6 +71,22 @@ function makeNav() {
    const h21 = document.createElement('h2');
    h21.innerHTML ='contact';
    contact.appendChild(h21)
+
+   const social = document.createElement('div');
+   const socialh2 = document.createElement('h2');
+   
+   socialh2.innerHTML = `<i class="fab fa-instagram"></i>&nbsp  <i class="fab fa-twitter"></i>  <i class="fab fa-youtube"></i>`
+   social.appendChild(socialh2)
+   navContainer.appendChild(social)
+   socialh2.setAttribute('id', 'socialh2')
+   social.setAttribute('id', 'socialcontainer')
+
+   navContainer.setAttribute('id', 'navcontainer')
+   navContainer.appendChild(home)
+   navContainer.appendChild(menu)
+   navContainer.appendChild(contact)
+   navContainer.appendChild(social);
+
 
 } 
 
@@ -99,7 +118,9 @@ function newsLetter(){
 const form = document.createElement('div');
 const mainpic = document.querySelector('#mainpic');
 
-form.innerHTML = `<input type="text" id="formInput"> Sign Up for our weekly newsletter, get 10% off your first order. <br> <button type ="button" id ="email">Sign Up</button>`
+
+
+form.innerHTML = `<input type="text" id="formInput" placeholder="Enter Email"> <h2 id="signup">Sign Up for our weekly newsletter, get 10% off your first order.</h2> <br> <button type ="button" id ="email">Sign Up</button>`
 
 form.setAttribute('id', 'form')
 
