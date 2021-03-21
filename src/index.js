@@ -2,6 +2,7 @@ import { home } from "./renderElement.js";
 import { menu, removeMenu } from "./menu.js";
 import { contact, removeContact } from "./contact.js";
 
+
 const contentDiv = document.querySelector("#content");
 contentDiv.setAttribute("id", "mainpic");
 
@@ -41,3 +42,8 @@ contactBtn.addEventListener("click", function () {
   menuBtn.disabled = false;
   contact();
 });
+
+document.getElementById('githubBtn').onclick = function () {
+  window.open('https://github.com/TamburriSam', '_blank');
+  
+}
