@@ -5,7 +5,8 @@ function clear(){
     const mainpic = document.querySelector('#mainpic');
     const overDiv = document.createElement('div');
     const infoDiv = document.querySelector('#infoDiv');
-    const tryDiv = document.querySelector('#tryDiv')
+    const tryDiv = document.querySelector('#tryDiv');
+    const signup = document.querySelector('#form');
 
     overDiv.setAttribute('id', 'overdiv');
 
@@ -13,6 +14,7 @@ function clear(){
 
     infoDiv.style.display ='none';
     tryDiv.style.display='none';
+    signup.style.display='none';
 }
 
 function contactSheet(){

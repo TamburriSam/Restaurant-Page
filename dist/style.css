@@ -1,0 +1,628 @@
+/* CSS Reset */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat&display=swap");
+
+* {
+  overflow: hidden;
+  color: #2b2828 ;
+
+}
+
+:root {
+  --main-font: "Della Respira", serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+#mainpic {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background: white url(../dist/img/weirdFruit.jpg) no-repeat;
+  background-size: cover;
+  background-color: #7fa180;
+}
+
+.background {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.background h2 {
+  font-family: var(--main-font);
+  font-size: 14px;
+  background-color: transparent;
+}
+
+#navcontainer {
+  background-color: transparent;
+  margin-right: 20px;
+  display: flex;
+}
+
+#socialcontainer {
+  width: 100px;
+  height: 70px;
+  display: flex;
+  line-height: 70px;
+  color: black;
+}
+
+#socialh2 {
+  font-size: 20px;
+  color: black;
+}
+
+.home {
+  line-height: 60px;
+  background-color: transparent;
+  border: none;
+  text-decoration: overline solid;
+}
+.home:hover {
+  cursor: pointer;
+  border-radius: 150px;
+  outline: none;
+}
+
+button h2:hover {
+  text-decoration: underline solid;
+}
+
+.contact {
+  line-height: 60px;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+}
+.contact:hover {
+  cursor: pointer;
+  text-decoration: underline solid;
+  outline: none;
+}
+
+.menu {
+  font-family: var(--main-font);
+  font-size: 22px;
+  line-height: 60px;
+  background-color: transparent;
+  border: none;
+}
+.menu:hover {
+  cursor: pointer;
+  text-decoration: underline solid;
+  outline: none;
+}
+
+#title {
+  font-family: var(--main-font);
+  font-size: 24px;
+  color: #2b2828;
+  margin-left: 20px;
+  background: url();
+}
+
+#subtitle {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  margin-left: 20px;
+  border-bottom: 1px solid black;
+}
+
+#empty {
+  background-color: white;
+  display: flex;
+  width: 100vw;
+  height: 40px;
+  color: transparent;
+}
+
+.div {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  color: #2b2828;
+  margin-left: 20px;
+}
+
+#tryDiv {
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  left: 120px;
+  font-family: var(--main-font);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#tryBtn {
+  font-family: var(--secondary-font);
+  background: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 230px;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: 0.2s all;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-left: solid 3px #90d4ba;
+  border-bottom: solid 3px #90d4ba;
+}
+#tryBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  transform: scale(0.98);
+  border-bottom: solid 2px #90d4ba;
+  border-left: solid 2px #90d4ba;
+}
+#tryBtn:focus {
+  outline: 0;
+}
+
+#infoDiv {
+  font-family: var(--main-font);
+  position: fixed;
+  right: 130px;
+  top: 260px;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #2b2828;
+}
+
+#advertisement {
+  background-color: #90d4ba;
+  text-align: center;
+  position:absolute;
+  top:0;
+  width:100vw;
+  font-family: var(--secondary-font);
+  height: 30px;
+  padding: 10px;
+  line-height:10px;
+}
+
+#bigDiv {
+  background-size: cover;
+  text-align: center;
+}
+
+#menuBackground {
+  background-color: black;
+  opacity: 0.9;
+  margin-top: 40px;
+  height: 65vh;
+  width: 40vw;
+  display: inline-flex;
+  text-align: left;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.foodDivs {
+  width: 100vw;
+  height: 100vh;
+  z-index: 70;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.foodDivs img {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.mango {
+  color: pink;
+  z-index: 1;
+  line-height: 100px;
+  height: 100vh;
+  width: 100vw;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  display: inline;
+}
+
+#overdiv {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#overlay {
+  width: 60vw;
+  height: 70vh;
+  padding: 15px;
+  margin-top: 40px;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  line-height: 30px;
+  background: #020000c4;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+}
+
+#strange {
+  color: rgb(255, 255, 255);
+  padding: -3px;
+  border-bottom: 1px solid white;
+}
+
+.btn1 {
+  background: transparent;
+  color: pink;
+  border: 2px solid pink;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: var(--secondary-font);
+  margin-left: 10px;
+}
+.btn1:hover {
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+}
+
+.halfDiv {
+  width: 30vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+}
+
+#mangos {
+  height: 200px;
+  background-image: url(/dist/img/mangos.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: circle(15%);
+  display: inline;
+  z-index: 90;
+  position: relative;
+  bottom: 40px;
+}
+
+#starfruit {
+  height: 100px;
+  background-image: url(/dist/img/starfruit.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: circle(20%);
+  display: inline-flex;
+  position: relative;
+  bottom: 100px;
+}
+
+#passion {
+  height: 100px;
+  background-image: url(/dist/img/passionfruit.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: circle(20%);
+  display: inline-flex;
+  position: relative;
+  bottom: 100px;
+}
+
+#jackfruit {
+  height: 100px;
+  background-image: url(/dist/img/jackfruit.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: circle(20%);
+  display: inline-flex;
+  position: relative;
+  bottom: 100px;
+}
+
+#durian {
+  height: 100px;
+  background-image: url(/dist/img/durian.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: circle(20%);
+  display: inline-flex;
+  position: relative;
+  bottom: 100px;
+}
+
+#rambutan {
+  height: 100px;
+  background-image: url(/dist/img/rambutan.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: circle(20%);
+  display: inline-flex;
+  position: relative;
+  bottom: 100px;
+}
+
+hr {
+  background-color: black;
+}
+
+i.lemon {
+  display: none;
+}
+
+#form {
+  width: 250px;
+  height: 130px;
+  position: absolute;
+  bottom: 250px;
+  left: 115px;
+  background-color: rgb(241, 241, 241);
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  border-radius: 4px;
+  z-index:50;
+  border: solid 2px #90d4ba;
+  border-left: solid 3px #90d4ba;
+}
+
+div#form {
+  border-bottom: solid 3px #90d4ba;
+}
+
+#signup {
+  color: black;
+  position: absolute;
+  top: 0;
+}
+
+#formInput {
+  background: white;
+  border-radius: 4px;
+  border: 2px solid #90d4ba;
+  height: 30px;
+  font-family: var(--secondary-font);
+  width: 230px;
+  margin-bottom: 20px;
+}
+
+#email {
+  background-color: #fff;
+  position: relative;
+  top: 85px;
+  height: 30px;
+  border: 2px solid #90d4ba;
+  border-radius: 5px;
+  font-family: var(--secondary-font);
+
+  margin: auto;
+  width: 50%;
+}
+#email:hover{
+  background-color: #90d4ba;
+  cursor: pointer;
+}
+#email:focus {
+  outline: 0;
+}
+
+#footer {
+  width:100vw;
+  height:3.5vh;
+  text-align: center;
+  font-family: var(--secondary-font);
+  background-color: #90d4ba;
+  bottom:0;
+  position:absolute;
+  line-height:-8px;
+}
+
+#githubBtn{
+  border:none;
+  background:transparent;
+  font-size:19px;
+  margin-top:2px;
+}
+#githubBtn:hover {
+  cursor:pointer;
+}
+#githubBtn:focus {
+  outline:0;
+}
+
+@media screen and (max-width: 900px) {
+  #title {
+    text-align: center;
+  }
+
+  #subtitle {
+    display: none;
+  }
+
+  .background {
+    justify-content: center;
+  }
+
+  .home {
+    margin-left: 70px;
+    bottom: 10px;
+    position: relative;
+    z-index: 909;
+  }
+
+  i.lemon {
+    display: block;
+  }
+
+  .lemon {
+    font-size: 140px;
+    margin-top: 50px;
+  }
+
+  .menu {
+    margin-right: 0px;
+    bottom: 12px;
+    position: relative;
+    z-index: 909;
+  }
+
+  .contact {
+    margin-right: 0px;
+    bottom: 10px;
+    position: relative;
+    z-index: 909;
+  }
+
+  .background h2 {
+    display: inline-flex;
+  }
+
+  #infoDiv {
+    right: 0px;
+    top: 0px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    padding: 150px 0;
+    color: black;
+    opacity: 0.6;
+    z-index: 90;
+  }
+
+  div#infoDiv {
+    left: 0;
+  }
+
+  #mainpic {
+    background-image: none;
+    background-color: #7fa180;
+  }
+
+  #tryDiv {
+    position: relative;
+
+    left: 0px;
+  }
+  div#tryDiv {
+    justify-content: center;
+    top: 370px;
+    color: #2b2828 ;
+
+  }
+
+  #tryBtn {
+    width: 45vw;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  #form {
+    margin: 0 auto;
+    position: relative;
+    top: 370px;
+    left:0px;
+  }
+
+  #socialcontainer {
+    display: inline;
+    bottom: 10px;
+    position: relative;
+  }
+
+  .contact {
+    margin-right: 20px;
+  }
+
+  #bigDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menuBackground {
+    width: 90vw;
+    position: absolute;
+    bottom: 120px;
+  }
+
+  .foodDivs {
+    display: block;
+  }
+
+  .mango {
+    width: 30vw;
+    line-height: 100px;
+  }
+
+  .btn1 {
+    width: 50px;
+    height: 30px;
+  }
+
+  .halfDiv {
+    width: 40vw;
+  }
+
+  #overdiv {
+    bottom: 130px;
+    position: relative;
+  }
+
+  #footer{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mango {
+    font-size: 10px;
+    width: 30vw;
+    line-height: 100px;
+  }
+
+  .halfDiv {
+    display: none;
+  }
+
+  .foodDivs {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 901px) {
+  #infoDiv {
+    position: absolute;
+    left: 100px;
+  
+  }
+
+  #tryDiv {
+    left:100px;
+    top: 440px;
+  }
+
+  #tryBtn {
+    width: 25vw;
+  }
+
+  #form {
+    bottom: 200px;
+    left:98px;
+  }
+
+  #menuBackground {
+    width: 80vw;
+  }
+}
