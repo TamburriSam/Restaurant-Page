@@ -288,6 +288,7 @@ button h2:hover {
   background-image: url(/dist/img/mangos.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   clip-path: circle(15%);
   display: inline;
   z-index: 90;
@@ -300,6 +301,7 @@ button h2:hover {
   background-image: url(/dist/img/starfruit.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   clip-path: circle(20%);
   display: inline-flex;
   position: relative;
@@ -311,6 +313,8 @@ button h2:hover {
   background-image: url(/dist/img/passionfruit.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+
   clip-path: circle(20%);
   display: inline-flex;
   position: relative;
@@ -322,6 +326,8 @@ button h2:hover {
   background-image: url(/dist/img/jackfruit.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+
   clip-path: circle(20%);
   display: inline-flex;
   position: relative;
@@ -333,10 +339,16 @@ button h2:hover {
   background-image: url(/dist/img/durian.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+
   clip-path: circle(20%);
   display: inline-flex;
   position: relative;
   bottom: 100px;
+}
+
+.fa-shopping-cart{
+  color:pink;
 }
 
 #rambutan {
@@ -344,6 +356,8 @@ button h2:hover {
   background-image: url(/dist/img/rambutan.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+
   clip-path: circle(20%);
   display: inline-flex;
   position: relative;
@@ -624,5 +638,6 @@ div#form {
 
   #menuBackground {
     width: 80vw;
+    height:70vh;
   }
 }
