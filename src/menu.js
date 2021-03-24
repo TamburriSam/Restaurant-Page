@@ -3,6 +3,7 @@ function test() {
   const bigDiv = document.createElement("div");
   const infoDiv = document.querySelector("#infoDiv");
   const tryDiv = document.querySelector("#tryDiv");
+  const signup = document.querySelector('#form');
 
   bigDiv.setAttribute("id", "bigDiv");
 
@@ -10,6 +11,7 @@ function test() {
 
   infoDiv.style.display = "none";
   tryDiv.style.display = "none";
+  signup.style.display='none';
 }
 
 function testBackground() {
