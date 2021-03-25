@@ -439,7 +439,9 @@ div#form {
   background-color: #90d4ba;
   bottom:0;
   position:absolute;
-  line-height:-8px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #githubBtn{
@@ -567,6 +569,7 @@ div#form {
 
   #menuBackground {
     width: 90vw;
+    font-size:20px;
     position: absolute;
     bottom: 120px;
   }
@@ -578,6 +581,7 @@ div#form {
   .mango {
     width: 30vw;
     line-height: 100px;
+    font-size:20px 
   }
 
   .btn1 {
@@ -590,13 +594,11 @@ div#form {
   }
 
   #overdiv {
-    bottom: 130px;
+    bottom: 0px;
     position: relative;
   }
 
-  #footer{
-    display:none;
-  }
+  
 }
 
 @media screen and (max-width: 400px) {
@@ -631,6 +633,8 @@ div#form {
     width: 25vw;
   }
 
+ 
+
   #form {
     bottom: 200px;
     left:98px;
@@ -638,6 +642,7 @@ div#form {
 
   #menuBackground {
     width: 80vw;
-    height:70vh;
+    height:65vh;
+    
   }
 }
