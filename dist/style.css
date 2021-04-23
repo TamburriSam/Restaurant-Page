@@ -18,7 +18,9 @@
   width: 100vw;
   height: 100vh;
   display: block;
-  background: white url(../dist/img/weirdFruit.JPG) no-repeat;
+  background-image: url(../dist/img/weirdFruit.JPG);
+  background-color: white;
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: #7fa180;
 }
